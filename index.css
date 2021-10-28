@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    background-color: #121212;
+
+    /* Apenas para termos um scroll para demonstrar */
+    height: 500vh;
+}
+
+/* Estilo da barra de progresso */
+.progress {
+    background: linear-gradient(
+        to right,
+        rgba(81, 255, 92, 1) 0%,
+        rgba(29, 201, 253, 1) 50vw,
+        rgba(178, 69, 252, 1) 100vw
+    );
+    /* gradiente de fundo predefinido */
+    background-repeat: no-repeat;
+    position: fixed;
+    width: var(--scroll); /* Largura da variável com base na posição da rolagem */
+    top: 0;
+    left: 0;
+    height: 4px;
+    z-index: 1;
+}
